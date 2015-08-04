@@ -1,3 +1,5 @@
 # commandQQ
 The QQ based command
-This branch is master, which is responsible for releasing the final version.
+This master branch is responsible for releasing the final version.
+This dev branch is responsible for develping the project.
+This bug branch is responsible for fixing the project.
