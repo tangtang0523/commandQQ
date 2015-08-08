@@ -17,13 +17,13 @@ void get_cur_time(char *time_str)
     time(&timep);
     p_curtime = localtime(&timep);
     strcat(time_str, "(");
-    itoa(p_curtime->tm_hour,time_tmp);
+    myitoa(p_curtime->tm_hour,time_tmp);
     strcat(time_str,time_tmp);
     strcat(time_str,":");
-    itoa(p_curtime->tm_min,time_tmp);
+    myitoa(p_curtime->tm_min,time_tmp);
     strcat(time_str,time_tmp);
     strcat(time_str,":");
-    itoa(p_curtime->tm_sec,time_tmp);
+    myitoa(p_curtime->tm_sec,time_tmp);
     strcat(time_str,time_tmp);
     strcat(time_str,")");
     free(time_tmp);

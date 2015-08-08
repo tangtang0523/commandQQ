@@ -1,6 +1,6 @@
 #include "common.h"
 
-void itoa(int i, char*string)
+void myitoa(int i, char*string)
 {
     if (i < 10)
         *string++ = '0' + 0;
