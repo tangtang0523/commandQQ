@@ -8,12 +8,13 @@ TARGET_CLIENT = client
 
 CFLAG = -Wall -g
 
+all: $(TARGET_SERVER) $(TARGET_CLIENT)
+
 $(TARGET_SERVER):$(servercfile) 
 	$(CC) $(CFLAG) $(servercfile) -o $@
 $(TARGET_CLIENT):$(clientcfile) 
 	$(CC) $(CFLAG) $(clientcfile) -o $@
 
-all: $(TARGET_SERVER) $(TARGET_CLIENT)
 clean: 
 	$(RM) *.o
 	$(RM) $(TARGET_SERVER) $(TARGET_CLIENT)
