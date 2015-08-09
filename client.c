@@ -16,7 +16,7 @@
 int main(int argc, const char *argv[])
 {
 	int sockfd, len; 
-	//socklen_t len1;
+	////socklen_t len1;
 	struct sockaddr_in dest;
 	char buf[MAXBUF + 1];
 	fd_set rfds;
